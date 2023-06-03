@@ -1,7 +1,7 @@
-const numberOfcategories = document.querySelector('#categories');
-console.log('Number of categories:', numberOfcategories.children.length);
+const categoriesEl = document.querySelector('#categories');
+console.log('Number of categories:', categoriesEl.children.length);
 
-[...numberOfcategories.children].forEach(item => {
+[...categoriesEl.children].forEach(item => {
     console.log('Category:', item.firstElementChild.textContent);
     console.log('Elements:', item.lastElementChild.children.length);
 })
