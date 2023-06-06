@@ -15,14 +15,13 @@ const images = [
 
 const galleryEl = document.querySelector(".gallery");
 
-const galleryList = images
+const makeGalleryList = images
   .map(
     (img) =>
       `<li><img class = "picture" src = ${img.url} alt = ${img.alt}  width="300"></img></li>`
-  )
-  .join("");
+  );
 
-galleryEl.insertAdjacentHTML('beforeend', galleryList);
+galleryEl.insertAdjacentHTML('afterbegin', makeGalleryList.join(''));
 
 galleryEl.style.cssText = `list-style: none;
 display: flex;
