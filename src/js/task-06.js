@@ -1,7 +1,7 @@
-const inputEl = document.querySelector("#validation-input");
+const formInputEl = document.querySelector("#validation-input");
 
-inputEl.addEventListener("blur", (event) => {
-    event.currentTarget.value.length === Number(inputEl.getAttribute("data-length")) ?
-    (inputEl.classList.add("valid"), inputEl.classList.remove("invalid")) :
-    (inputEl.classList.add("invalid"), inputEl.classList.remove("valid"));
+formInputEl.addEventListener("blur", (event) => {
+    event.currentTarget.value.length === Number(formInputEl.getAttribute("data-length")) ?
+    (formInputEl.classList.add("valid"), formInputEl.classList.remove("invalid")) :
+    (formInputEl.classList.add("invalid"), formInputEl.classList.remove("valid"));
 });
