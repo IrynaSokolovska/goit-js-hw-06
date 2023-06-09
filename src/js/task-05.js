@@ -1,4 +1,5 @@
 const formInputEl = document.querySelector("#name-input");
+
 const formOutputEl = document.querySelector("#name-output");
 
 formInputEl.addEventListener("input", (event) => {
