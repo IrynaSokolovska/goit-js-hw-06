@@ -6,6 +6,7 @@ function getRandomHexColor() {
 
 
 const bodyEl = document.querySelector("body");
+
 const btnEl = document.querySelector(".change-color");
 const spanEl = document.querySelector(".color");
 
